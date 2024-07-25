@@ -502,11 +502,11 @@ img {
     top:32.5px;
 }
 
-/*.nav__logo{
+.nav__logo{
     position:absolute;
     right:20px;
     top:35px;
-}*/
+}
 
 ::-webkit-scrollbar {
     display: none;
