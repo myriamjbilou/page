@@ -84,7 +84,7 @@ img {
 }
 
 .nav{
-    /*position: relative;*/
+    position: relative;
     height: var(--header-height);
     display:flex;
     justify-content: space-evenly;
@@ -204,7 +204,7 @@ img {
 }
 
 .home__images{
-    /*position: relative;*/
+ position: relative;
 }
 
 .home__images [class*=home__blob]{
