@@ -6,17 +6,17 @@ const navMenu = document.getElementById('nav-menu'),
 
 //Menu Show
 if (navToogle) {
-    navToogle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu');
-    });
+    navToogle.addEventListener('click', () =>{
+        navMenu.classList.add('show-menu')
+    })
 }
 
 //menu Hidden
 if (navClose) {
-    navClose.addEventListener('click', () => {
-        nav.Menu.classList.remove('show-menu');
+    navClose.addEventListener('click', () =>{
+        nav.Menu.classList.remove('show-menu')
 
-    });
+    })
 }
 
 
@@ -24,7 +24,7 @@ if (navClose) {
 
 const navLink = document.querySelectorAll('.nav__link')
 
-const linkAction = () => {
+const linkAction = () =>{
     const navMenu = document.getElementById('nav-menu')
     navMenu.classList.remove('show-menu')
 }
@@ -33,9 +33,9 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== ADD SHADOW HEADER ===============*/
 
-const shadowHeader = () => {
+const shadowHeader = () =>{
     const header = document.getElementById('header')
-    this.scroll >= 50 ? header.classList.add('shadow-header')
+    this.scrollY >= 50 ? header.classList.add('shadow-header')
                       : header.classList.remove('shadow-header')
 
 }
@@ -50,8 +50,8 @@ let tl1 = gsap.timeline()
     .to('.home__img-2', { duration: 1, rotation: 0, scale: 1 })
 
 let tl2 = gsap.timeline()
-    tl2.from('.home__img-3', { duration: 1, x: 50, y: -50, rotation: 30})
-    .to('.home__img-3', { duration: 5, rotation: 360 })
+    tl2.from('.home__img-3', {duration: 1, x: 50, y: -50, rotation: 30})
+    .to('.home__img-3', {duration: 5, rotation: 360 })
 
 gsap.from('.home__img-4', {duration: 5, y: -100, scale: 1.3 })
 gsap.from('.home__img-5', {duration: 3, y: 100 })
