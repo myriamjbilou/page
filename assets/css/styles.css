@@ -25,8 +25,15 @@
   --z-fixed: 100;
 }
 
+/*
+    body {
+        filter: invert(100%);
+        background: #000;
+    }
+*/
+
 /*========== Responsive typography ==========*/
-@media screen and (min-width: 1150px) {
+    @media screen and (min-width: 1150px) {
   :root {
     --biggest-font-size: 6.5rem;
     --big-font-size: 2rem;
@@ -84,7 +91,7 @@ img {
 }
 
 .nav{
-    position: relative;
+    /*position: relative;*/
     height: var(--header-height);
     display:flex;
     justify-content: space-between;
@@ -204,7 +211,7 @@ img {
 }
 
 .home__images{
-    position: relative;
+    /*position: relative;*/
 }
 
 .home__images [class*=home__blob]{
@@ -424,8 +431,8 @@ img {
     .home__blob-1 {
         width: 220px;
         height: 260px;
-        top: -20rem;
-        left: -1rem;
+        top: 20rem;
+        left: -5%;
     }
     .home__img-1 {
         width: 180px;
@@ -433,7 +440,8 @@ img {
     .home__blob-2 {
         width: 360px;
         height: 355px;
-        top: -27rem;
+        top: 12rem;
+        right: -5%;
     }
     .home__img-2 {
         width: 280px;
@@ -442,6 +450,7 @@ img {
         width: 500px;
         height: 485px;
         bottom: -11rem;
+        left: -5%;
     }
     .home__img-3 {
         width: 250px;
@@ -453,8 +462,9 @@ img {
     .home__blob-4 {
         width: 500px;
         height: 485px;
-        right: -7rem;
+        /*right: -7rem;*/
         bottom: -12rem;
+        right: -5%;
     }
     .home__img-4 {
         width: 450px;
@@ -464,7 +474,7 @@ img {
     .home__img-5{
         width: 250px;
         right: 0;
-        top: 9rem;
+        top: 39rem;
     }
 }
     
@@ -485,4 +495,18 @@ img {
     }
 }
 
+.ri-apps-2-line {
+    position:absolute;
+    right:20px;
+    top:32.5px;
+}
 
+/*.nav__logo{
+    position:absolute;
+    right:20px;
+    top:35px;
+}*/
+
+::-webkit-scrollbar {
+    display: none;
+}
