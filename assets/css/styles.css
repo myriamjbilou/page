@@ -25,12 +25,10 @@
   --z-fixed: 100;
 }
 
-/*
-    body {
-        filter: invert(100%);
-        background: #000;
-    }
-*/
+body {
+    filter: invert(100%);
+    /* background: #000;*/
+}
 
 /*========== Responsive typography ==========*/
     @media screen and (min-width: 1150px) {
@@ -94,7 +92,7 @@ img {
     /*position: relative;*/
     height: var(--header-height);
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -177,7 +175,7 @@ img {
 }
 
 .home__subtitle{
-    font-size: var(--normal-font-size);
+    font-size: var(--normal-font-size1);
     margin-bottom: .5rem;
 }
 
@@ -415,10 +413,9 @@ img {
     .home__container {
         grid-template-columns: 1fr;
         padding-top: 10rem;
-    }
-    
-    /*.home__subtitle {
-        font-size: var(--normal-font-size);*/
+    }  
+    .home__subtitle {
+        font-size: var(--biggest-font-size);
     }
     .home__title {
         -webkit-text-stroke-width: 8px;
@@ -504,7 +501,7 @@ img {
 
 .nav__logo{
     position:absolute;
-    right:20px;
+    left:20px;
     top:35px;
 }
 
