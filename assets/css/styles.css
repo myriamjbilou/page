@@ -6,12 +6,12 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
+  /*Color: mode HSL(hue, saturation, lightness)*/
   --white-color: hsl(0, 0%, 96%);
   --black-color: hsl(0, 0%, 0%);
 
   /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
+  /*5rem = 8px | 1rem = 16px ...*/
   --body-font: "Space Grotesk", sans-serif;
   --biggest-font-size: 3rem;
   --normal-font-size: .938rem;
@@ -23,11 +23,6 @@
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
-}
-
-body {
-    filter: invert(100%);
-    /* background: #000;*/
 }
 
 /*========== Responsive typography ==========*/
