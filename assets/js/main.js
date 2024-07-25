@@ -51,8 +51,8 @@ let tl1 = gsap.timeline()
 
 let tl2 = gsap.timeline()
     tl2.from('.home__img-3', {duration: 1, x: 50, y: -50, rotation: 30})
-    .to('.home__img-3', {duration: 5, rotation: 360 })
+    .to('.home__img-3', {duration: 5, rotation: 360})
 
-gsap.from('.home__img-4', {duration: 5, y: -100, scale: 1.3 })
-gsap.from('.home__img-5', {duration: 3, y: 100 })
+gsap.from('.home__img-4', {duration: 5, y: -100, scale: 1.3})
+gsap.from('.home__img-5', {duration: 3, y: 100})
     
