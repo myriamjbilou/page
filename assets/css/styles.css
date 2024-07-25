@@ -177,7 +177,7 @@ img {
 }
 
 .home__subtitle{
-    font-size: var(--normal-font-size1);
+    font-size: var(--normal-font-size);
     margin-bottom: .5rem;
 }
 
@@ -415,9 +415,10 @@ img {
     .home__container {
         grid-template-columns: 1fr;
         padding-top: 10rem;
-    }  
-    .home__subtitle {
-        font-size: var(--biggest-font-size);
+    }
+    
+    /*.home__subtitle {
+        font-size: var(--normal-font-size);*/
     }
     .home__title {
         -webkit-text-stroke-width: 8px;

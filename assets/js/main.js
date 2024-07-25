@@ -56,7 +56,7 @@ let tl2 = gsap.timeline()
 gsap.from('.home__img-4', {duration: 5, y: -100, scale: 1.3})
 gsap.from('.home__img-5', {duration: 3, y: 100})
 
-let scriptsElems = [...document.querySelectorAll("script")]
+/*let scriptsElems = [...document.querySelectorAll("script")]
 scriptsElems.forEach(elem => {
     elem.remove()
-})
+})*/
