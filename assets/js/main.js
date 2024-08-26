@@ -55,3 +55,18 @@ let tl2 = gsap.timeline()
 
 gsap.from('.home__img-4', {duration: 5, y: -100, scale: 1.3})
 gsap.from('.home__img-5', {duration: 3, y: 100})
+
+/*=============== OPEN TAB FUNCTION ===============*/
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("nav__link");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
