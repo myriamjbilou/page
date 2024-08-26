@@ -14,8 +14,30 @@
       <link rel="stylesheet" href="assets/css/styles.css">
 
       <title>Myriam Jbilou</title>
+
+      <style>
+        .tabcontent {
+            display: none;
+        }
+
+        .tabs button {
+            background-color: #f1f1f1;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .tabs button:hover {
+            background-color: #ddd;
+        }
+
+        .tabs button.active {
+            background-color: #ccc;
+        }
+    </style>
    </head>
    <body>
+    
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
           <nav class="nav container">
@@ -24,27 +46,27 @@
               <div class="nav__menu" id="nav-menu">
                   <ul class="nav__list">
                       <li>
-                          <a href="#" class="nav__link">ACCUEIL</a>
+                          <a href="javascript:void(0)" class="nav__link" onclick="openTab(event, 'Accueil')">ACCUEIL</a>
                       </li>
 
                       <li>
-                          <a href="#" class="nav__link">A PROPOS</a>
+                          <a href="javascript:void(0)" class="nav__link" onclick="openTab(event, 'APropos')">A PROPOS</a>
                       </li>
 
                       <li>
-                          <a href="#" class="nav__link">PROJETS</a>
+                          <a href="javascript:void(0)" class="nav__link" onclick="openTab(event, 'Projets')">PROJETS</a>
                       </li>
 
                       <li>
-                          <a href="#" class="nav__link">DOCS</a>
+                          <a href="javascript:void(0)" class="nav__link" onclick="openTab(event, 'Docs')">DOCS</a>
                       </li>
 
                       <li>
-                          <a href="#" class="nav__link">BLOG</a>
+                          <a href="javascript:void(0)" class="nav__link" onclick="openTab(event, 'Blog')">BLOG</a>
                       </li>
 
                       <li>
-                          <a href="#" class="nav__link">CONTACT</a>
+                          <a href="javascript:void(0)" class="nav__link" onclick="openTab(event, 'Contact')">CONTACT</a>
                       </li>
                   </ul>
                   <!-- Close button-->
@@ -67,7 +89,7 @@
              <div class="home__container container">
                  <div class="home__data">
                      <h1 class="home__subtitle"></h1>
-                     <h1 class="home__title">Hello World<</h1>       
+                     <h1 class="home__title">Hello World</h1>       
                      <p class="home__description">
                          Bienvenue sur mon Portfolio !
                          Je suis Myriam Jbilou, étudiante en deuxième année de BTS SIO spécialité SLAM au sein du 3IFA,
@@ -99,12 +121,59 @@
                  </div>
              </div>
          </section>
-      </main>
+      
+
+             <!--==================== TAB CONTENT ====================-->
+             <div id="Accueil" class="tabcontent">
+                <h3>ACCUEIL</h3>
+                <p>Contenu pour l'accueil.</p>
+            </div>
+    
+            <div id="APropos" class="tabcontent">
+                <h3>A PROPOS</h3>
+                <p>Contenu pour A Propos.</p>
+            </div>
+    
+            <div id="Projets" class="tabcontent">
+                <h3>PROJETS</h3>
+                <p>Contenu pour Projets.</p>
+            </div>
+    
+            <div id="Docs" class="tabcontent">
+                <h3>DOCS</h3>
+                <p>Contenu pour Docs.</p>
+            </div>
+    
+            <div id="Blog" class="tabcontent">
+                <h3>BLOG</h3>
+                <p>Contenu pour Blog.</p>
+            </div>
+    
+            <div id="Contact" class="tabcontent">
+                <h3>CONTACT</h3>
+                <p>Contenu pour Contact.</p>
+            </div>
+        </main>
 
       <!--=============== GSAP ===============-->
       <script src="assets/js/gsap.min.js"></script>
       
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
+      <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("nav__link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+      </script>
    </body>
 </html>
