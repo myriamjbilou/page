@@ -203,9 +203,9 @@ img {
 
 }
 
-.home__images{
- /*position: relative;*/
-}
+/*.home__images{
+ /*position: relative;
+}*/ 
 
 .home__images [class*=home__blob]{
     background-color: var(--black-color); 
