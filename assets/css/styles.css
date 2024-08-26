@@ -204,7 +204,7 @@ img {
 }
 
 .home__images{
- position: relative;
+ /*position: relative;*/
 }
 
 .home__images [class*=home__blob]{
