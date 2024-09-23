@@ -170,7 +170,7 @@ img {
 }
 
 .home__subtitle{
-    font-size: var(--normal-font-size1);
+    font-size: var(--normal-font-size);
     margin-bottom: .5rem;
 }
 
